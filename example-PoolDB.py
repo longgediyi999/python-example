@@ -8,7 +8,6 @@ def func_ora_mkdsn(host, port, sid):
     return dsn
 
 
-
 def worker(pool, i):
     print('I am the worker of %d.' % i)
     conn = pool.connection()
